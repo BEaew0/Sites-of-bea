@@ -1,0 +1,53 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+    nav{
+    
+        background-color:pink;
+        padding-top: 5%;
+        position: sticky;
+        top: 0;
+    
+    }
+    
+    header{
+
+        
+        grid-area: header;
+        background-color:pink;
+        padding-top: 5%;
+        position: sticky;
+        top: 0;
+    
+       
+    }
+
+    main{
+        grid-area: main;
+        background-color: rgb(70, 31, 38); 
+        padding-bottom: 500px;;
+        
+
+    }
+
+    footer{
+        background-color: rgb(221, 192, 255);
+        grid-area: footer;
+    }
+
+
+.container{
+        display: grid;
+        grid-template-columns:  2fr;
+        grid-template-rows: 10vh 200vh 10vh;
+        gap: 1000px;;
+        grid-template-areas: "header header"
+                              "main main"
+                             "footer footer";
+        z-index: 0;
+    }
