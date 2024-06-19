@@ -1,0 +1,210 @@
+/* Reset básico */
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+/* Estilos para o cabeçalho */
+header {
+  grid-area: header;
+  background-color: #3d2b1f;
+  padding-top: 5%;
+  z-index: 0;
+  position: sticky;
+  top: 0;
+ 
+
+
+  /* Transições suaves para padding-top e altura */
+}
+
+.header-small {
+  padding-top: 2%;
+  height: 80px; /* Altura menor quando o cabeçalho for rolado */
+}
+
+.header-small .menu-toggle {
+  margin-top: 20px;
+  transition: padding 0.6s , height 0.6s ; 
+
+ /* Transição suave para o margin-top do menu-toggle */
+}
+
+
+/* Estilos para o menu de navegação */
+nav {
+  background-color:white;
+  padding-top: 5%;
+  position: sticky;
+  top: 0;
+
+  
+}
+
+/* Estilos para o container */
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+      "header"
+      "main"
+      "footer";
+  z-index: 0;
+}
+
+/* Estilos para o menu */
+.menu {
+  display: none;
+  position: fixed;
+  top: 30px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.555);
+  padding: 170px 20px;
+  width: 380px;;
+  
+
+
+}
+
+.menu.active {
+  display: block;
+  top: 0;
+  left: 0;
+  
+
+}
+
+.menu-toggle {
+  margin-top: 10px;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+  color: #fff;
+  background-color:transparent;
+  border:white solid 3px;
+  border-radius: 10px;
+  font-size: large;
+  padding: 5px 10px;
+
+  
+ 
+}
+
+
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li a {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  border: 7px solid rgb(0, 0, 0);
+  border-radius: 7px;
+  display: block;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #000000;
+  text-align: center;
+  font-size:medium;
+ 
+}
+
+.menu a:hover{
+  border: solid white 8px;
+}
+
+/* Estilos para o conteúdo principal */
+main {
+  grid-area: main;
+  background-color: rgb(252, 212, 160);
+  padding-bottom: 500px;
+  padding-top: 50%;
+}
+
+/* Estilos para o rodapé */
+footer {
+  background-color: rgb(221, 192, 255);
+  grid-area: footer;
+}
+
+/* Ajustes para dispositivos móveis */
+@media screen and (max-width: 768px) {
+  .menu {
+      top: 10px;
+      right: 10px;
+      left: auto; /* Ajuste conforme necessário */
+  }
+}
+.menu-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  background-color: rgb(70, 31, 38);
+  color: #adb5bd;
+  padding: 40px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.footer-column  {
+  flex: 1;
+  margin: 10px;
+  color: white;
+}
+
+
+
+.footer-column h3 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer-column ul li a {
+
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 10px;
+
+
+  color: white;
+  text-decoration: none;
+  font-size: 10px;
+ font-size:130%;
+
+}
+
+
+
+
+
+
+.footer-column a:hover {
+  text-decoration: underline;
+}

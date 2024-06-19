@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Define a altura mínima do body como 100% da viewport */
+    margin: 0;
+    background-color: rgb(70, 31, 38);
+  }
+  
+  header {
+    background-color: rgb(253, 150, 122);
+    height: 20%;
+    color: whitesmoke;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  main {
+    flex: 1; /* Faz com que o main ocupe todo o espaço vertical restante */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 350px;
+  }
+  
+  button {
+    background-color: #343a40;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #495057;
+  }
+  
+  aside {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 300px;
+    background-color: rgb(70, 31, 38);
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cart {
+    border: rgb(253, 150, 122);
+    border-radius: 5px;
+    border-style: ridge;
+    list-style: none;
+    padding: 0;
+    color: lightgray;
+  }
+  
+  .cart li {
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para o rodapé */
+  footer {
+    background-color: #343a40;
+    color: #adb5bd;
+    padding: 40px 0;
+    width: 100%;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  .footer-column {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .footer-column h3 {
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .footer-column ul {
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  .footer-column li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-column a {
+    color: #adb5bd;
+    text-decoration: none;
+  }
+  
+  .footer-column a:hover {
+    text-decoration: underline;
+  }
+  h2{
+    color: rgb(211, 211, 211)
+  }
+  h3{
+    color:rgb(211, 211, 211);
+  }
+  p{ color: rgb(211, 211, 211);
+
+  }
+  

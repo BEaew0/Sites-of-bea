@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Produtos</title>
+    <link rel="stylesheet" href="css/prod.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    
+    
+    <header>
+        <h1>Loja de Produtos</h1>
+        <button class="menu-toggle" onclick="toggleMenu()" aria-expanded="false">Menu</button>
+    <nav class="menu">
+        <button class="menu-close" onclick="toggleMenu()">X</button>  <!--menu só é fechado quando clicado no "X"-->
+        <ul>
+            <li><a href="#">página1</a></li>
+            <li><a href="#">página2</a></li>
+            <li><a href="#">página3</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <div class="products">
+            <div class="product" data-id="1" data-name="Sal Grosso Ajinomoto" data-price="3.60">
+
+                <h2>Temperos</h2>
+                <h3>Sal Grosso Ajinomoto </h3>
+                <img src="img/Remove-bg.ai_1718732550593.png" height="222px" width="350px" alt="" srcset="">
+                <p>Preço: R$ 3,60</p>
+                <button class="add-to-cart">Adicionar à Cesta</button>
+            </div>
+            <div class="product" data-id="2" data-name="Tempero-Pronto" data-price="5.51">
+                <h2>Temperos</h2>
+                <h3>Tempero-Pronto</h3>
+                <img src="img/Tempero-Completo-Com-Pimenta-Sabor-Ami-Ajinomoto-300g.webp" height="222px" width="350px"alt="" srcset="">
+                <p>Preço: R$ 5,51</p>
+                <button class="add-to-cart">Adicionar à Cesta</button>
+            </div>
+            <div class="product" data-id="3" data-name="Pimenta-do-Reino" data-price="5.90">
+                <h2>Temperos</h2>
+                <h3>Pimenta Vermelha</h3>
+                <img src="img/pimentadoreino.png" height="222px" width="350px"alt="" srcset="">
+                <p>Preço: R$ 5,90</p>
+                <button class="add-to-cart">Adicionar à Cesta</button>
+            </div>
+            <div class="product" data-id="4" data-name="Vinagre-Balsamico" data-price="15.50">
+                <h2>Vinagres</h2>
+                <h3>Vinagre-Balsamico</h3>
+                <img src="img/Remove-bg.ai_1718738324227.png" height="222px" width="350px"alt="" srcset="">
+                <p>Preço: R$ 15,50</p>
+                <button class="add-to-cart">Adicionar à Cesta</button>
+            </div>
+            <div class="product" data-id="5" data-name="Vinagre-Vinho-Tinto" data-price="15.50">
+                <h2>Vinagres</h2>
+                <h3>Vinagre-Vinho-Tinto</h3>
+                <img src="img/Remove-bg.ai_1718738191133.png" height="222px" width="350px"alt="" srcset="">
+                <p>Preço: R$ 9,90</p>
+                <button class="add-to-cart">Adicionar à Cesta</button>
+            </div>
+            <div class="product" data-id="6" data-name="Vinagre-de-Alcool" data-price="4.99">
+                <h2>Vinagres</h2>
+                <h3>Vinagre-de-Alcool</h3>
+                <img src="img/Remove-bg.ai_1718738174604.png" height="222px" width="350px"alt="" srcset="">
+                <p>Preço: R$ 4,99</p>
+                <button class="add-to-cart">Adicionar à Cesta</button>
+            </div>
+            <div class="product" data-id="6" data-name="Azeite-Gallo" data-price="36.40">
+                <h2>Azeites</h2>
+                <h3>Azeite-Extra-Virgem</h3>
+                <img src="img/azeite galo.png" height="222px" width="350px"alt="" srcset="">
+                <p>Preço: R$ 36,40</p>
+                <button class="add-to-cart">Adicionar à Cesta</button>
+            </div>
+            <div class="product" data-id="7" data-name="Azeite-Gallo" data-price="45.99">
+                <h2>Azeites</h2>
+                <h3>Azeite-Tipo-Unico</h3>
+                <img src="img/668391.webp" height="222px" width="350px"alt="" srcset="">
+                <p>Preço: R$ 45,99</p>
+                <button class="add-to-cart">Adicionar à Cesta</button>
+            </div>
+            <div class="product" data-id="8" data-name="Azeite-Gallo" data-price="49.92">
+                <h2>Azeites</h2>
+                <h3>Azeite-Dia-A-Dia</h3>
+                <img src="img/Remove-bg.ai_1718740274484.png" height="222px" width="350px"alt="" srcset="">
+                <p>Preço: R$ 49,92</p>
+                <button class="add-to-cart">Adicionar à Cesta</button>
+            </div>
+            <div class="product" data-id="9" data-name="Alho-Ervas" data-price="12.89">
+                <h2>Alho & Ervas</h2>
+                <h3>Alho</h3>
+                <img src="img/Remove-bg.ai_1718742724746.png" height="222px" width="350px"alt="" srcset="">
+                <p>Preço: R$ 49,92</p>
+                <button class="add-to-cart">Adicionar à Cesta</button>
+            </div>
+            <!-- Adicione mais produtos conforme necessário -->
+        </div>
+    </main>
+    <aside>
+        <h2>Cesta</h2>
+        <ul class="cart">
+            <!-- Itens adicionados à cesta aparecerão aqui -->
+        </ul>
+        <button class="checkout">Finalizar Compra</button>
+    </aside>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Coluna 1</h3>
+                <ul>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Coluna 2</h3>
+                <ul>
+                    <li><a href="#">Link 4</a></li>
+                    <li><a href="#">Link 5</a></li>
+                    <li><a href="#">Link 6</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Coluna 3</h3>
+                <ul>
+                    <li><a href="#">Link 7</a></li>
+                    <li><a href="#">Link 8</a></li>
+                    <li><a href="#">Link 9</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Coluna 4</h3>
+                <ul>
+                    <li><a href="#">Link 10</a></li>
+                    <li><a href="#">Link 11</a></li>
+                    <li><a href="#">Link 12</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Coluna 5</h3>
+                <ul>
+                    <li><a href="#">Link 13</a></li>
+                    <li><a href="#">Link 14</a></li>
+                    <li><a href="#">Link 15</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/index.js"></script>
+    <script src="js/produto.js"></script>
+</body>
+</html>
